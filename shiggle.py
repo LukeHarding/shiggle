@@ -28,6 +28,7 @@ def login():
         curses.echo()
         username =  form.getstr(1, 1+len('username'), 15)
         password =  form.getstr(2, 1+len('password'), 15)
+        curses.noecho()
     pass
 
 # takes in a query string, sends the query to github returns the query results
